@@ -24,6 +24,8 @@ class CocaineDetectorService : AccessibilityService() {
         lastCheckTime = now
 
         val rootNode = rootInActiveWindow ?: return
+        // Try to refresh the root node to get the latest content if possible
+        rootNode.refresh()
         val screenText = collectScreenText(rootNode)
 
         if (screenText.lowercase().contains("cocaine")) {
