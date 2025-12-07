@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CocaineDetector</string>
+    <string name="accessibility_service_description">Monitors screen content for dangerous keywords.</string>
+    <string name="accessibility_service_label">Cocaine Detector Service</string>
+    <string name="notification_channel_name">Detections</string>
+    <string name="notification_channel_description">Notifications for detected keywords</string>
+</resources>
